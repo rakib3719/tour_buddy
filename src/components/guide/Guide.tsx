@@ -10,7 +10,7 @@ interface Profile {
     name: string;
     location: string;
     rate: number;
-    image: string;
+    image: string |unknown;
     reviews: number;
     phoneNumber:number | string,
     Experience:number
@@ -37,7 +37,7 @@ const Guide = () => {
            <section className='flex md:w-[74%] flex-col md:flex-row shadow-lg rounded-lg overflow-hidden bg-white p-6 gap-6 md:items-center'>
                 {/* Profile Image */}
                 <div className='flex justify-center md:justify-start'>
-                    <Image src={guideProfile.image} alt={guideProfile.name} width={120} height={120} className='rounded-full border shadow-md' />
+                    <Image src={guideProfile.image as string} alt={guideProfile.name} width={120} height={120} className='rounded-full border shadow-md' />
                 </div>
 
                 {/* Profile Details */}
@@ -78,7 +78,7 @@ const Guide = () => {
                 {/* Price & Hire Button */}
                 <div className='flex flex-col items-center md:items-end'>
                     <h1 className='font-bold lg:ml-28 text-xl text-[#7BBCB0]'>Tk {guideProfile.rate}</h1>
-                    <p className='text-gray-400'>Per person</p>
+                    <p className='text-gray-400  lg:ml-28 '>Per person</p>
                     
                 </div>
                 <button className='bg-[#13253F]  px-14 flex justify-center items-center text-white  h-14 md:hidden  md:w-auto shadow-md hover:bg-[#0f1d2f]  rounded-full'>

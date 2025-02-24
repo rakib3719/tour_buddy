@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Guide from "@/components/guide/Guide";
-import Payment from "@/components/payment/Payment";
 
 export default function Home() {
   return (

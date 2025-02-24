@@ -95,7 +95,7 @@ className="placeholder:bg-[#f0f0f1] bg-[#f0f0f1] outline-none py-3 mt-1 px-4 w-f
 {/* image */}
 
 {/*payment image */}
-<div className=' '>
+<div className=' flex justify-center lg:block'>
 <Image src={paymentImage} alt='payment image'/>
 </div>
 </div>
@@ -104,9 +104,9 @@ className="placeholder:bg-[#f0f0f1] bg-[#f0f0f1] outline-none py-3 mt-1 px-4 w-f
 
 
 {/* select method */}
-<div className='mt-12'>
+<div className='mt-12 '>
   <h1 className='font-semibold my-2'>Select method:</h1>
-  <div className='flex flex-wrap gap-4'>
+  <div className='flex md:justify-start justify-center flex-wrap gap-4'>
     
     <label htmlFor="bkash">
       <div className='bg-[#37B1E2] flex items-center rounded-full p-4 gap-2 w-32'>

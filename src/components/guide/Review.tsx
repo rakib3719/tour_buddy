@@ -5,6 +5,7 @@ import customerProfile2 from '@/asset/image/customerProfile2.png';
 import { FaStar } from 'react-icons/fa';
 import Image from 'next/image';
 
+
 const Review = () => {
   const reviews = [
     {
@@ -17,7 +18,7 @@ const Review = () => {
     },
     {
       image: customerProfile2,
-      name: 'Arlene McCoy',
+      name: 'Alex hales',
       date: '2/1/2023',
       rating: 4,
       heading: 'Good tour, really well organised',
@@ -27,10 +28,10 @@ const Review = () => {
 
   return (
     <div className='mt-24'>
-      <div className='flex justify-between'>
+      <div className='md:flex justify-between'>
         <h1 className='font-semibold text-xl'>Customer Review</h1>
 
-        <div>
+        <div className='mt-4 md:mt-0'>
           <ProgressBar heading={"Guide"} rating={"4.8"} progress={"80%"} />
           <ProgressBar heading={"Transportation"} rating={"3.0"} progress={"60%"} />
           <ProgressBar heading={"Value for money"} rating={"4.8"} progress={"82%"} />
