@@ -1,10 +1,11 @@
-import Image from "next/image";
+import Payment from "@/components/payment/Payment";
+
 
 export default function Home() {
   return (
-    <div className="">
+    <div className=" mx-auto">
      
-   
+<Payment/>
     </div>
   );
 }
